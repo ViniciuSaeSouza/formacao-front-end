@@ -18,3 +18,10 @@ p {
     color: aqua;
     padding: 5px;
 }
+
+/* 7 - ID's com CSS */ 
+#exclusive-title {
+    background-color: purple;
+    color: yellow;
+    padding: 10px;
+}
