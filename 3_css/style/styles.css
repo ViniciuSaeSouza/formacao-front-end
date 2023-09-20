@@ -11,3 +11,10 @@ h2 {
 p {
     color: blueviolet;
 }
+
+/* 6 - Classes com CSS */ 
+.paragraphs {
+    background-color: black;
+    color: aqua;
+    padding: 5px;
+}
