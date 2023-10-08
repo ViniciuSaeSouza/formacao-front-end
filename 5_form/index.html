@@ -1,71 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulários</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <!-- 1 - Primeiro Formulário -->
     <!-- 2 - Atributos do Formulário-->
     <h2>Formulários</h2>
     <form method="get" action="registro.php">
-        <div>
-            <label>Nome:</label>
-            <input type="text">
+      <div>
+        <label>Nome:</label>
+        <input type="text" />
+      </div>
+      <!-- 3 - Atributo 'name' -->
+      <div>
+        <!-- 4 - atributo 'label' -->
+        <label for="age">Idade:</label>
+        <input type="text" name="age" />
+      </div>
+      <!-- 6 - select -->
+      <div>
+        <label for="job">Selecione a sua profissão:</label>
+        <select name="job">
+          <option value="programador">Programador</option>
+          <option value="tester">Tester/QA</option>
+          <option value="devops">DevOps</option>
+        </select>
+      </div>
+      <!-- 7 - Atributo selected -->
+      <div>
+        <label for="contract">Você leu os termos do contrato?</label>
+        <select name="contract">
+          <option value="sim">Sim</option>
+          <option value="nao" selected>Não</option>
+        </select>
+      </div>
+      <!-- 8 - Multiplas opções -->
+      <div>
+        <label for="items">Selecione os itens dedsejados: </label>
+        <select name="items" multiple>
+          <option value="pera">Pêra</option>
+          <option value="maca">Maçã</option>
+          <option value="arroz">Arroz</option>
+          <option value="feijao">Feijão</option>
+          <option value="milho">Milho</option>
+        </select>
+      </div>
+      <!-- 9 - textarea -->
+      <div>
+        <label for="comment">Escreva abaixo o que achou:</label>
+        <textarea name="comment" cols="20" rows="5"></textarea>
+      </div>
+      <!-- 10 - Fieldset e legend -->
+      <div>
+        <fieldset>
+          <legend>Ficha de cadastro:</legend>
+          <label for="firstname">Nome:</label>
+          <input type="text" name="firstname" />
+          <label for="lastname">Sobrenome:</label>
+          <input type="text" name="lastname" />
+        </fieldset>
+      </div>
+      <!-- 11 - datalist -->
+      <div>
+        <label for="flavor">Escolha o sabor:</label>
+        <input type="text" name="flavor" id="flavor" list="flavors" />
+        <datalist id="flavors">
+          <option value="Chocolate"></option>
+          <option value="Açaí"></option>
+          <option value="Baunilha"></option>
+          <option value="Chocomenta"></option>
+          <option value="Leite condensado"></option>
+        </datalist>
+      </div>
+      <!-- 12 - type=password -->
+      <div>
+        <label for="password">Digite a sua senha:</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <!-- 14 - radio button -->
+      <div>
+        <label for="car_model">Escolha o modelo do carro:</label>
+        <div class="radio">
+          <input type="radio" name="car_model" id="bmw" />
+          <label for="bmw">BMW</label>
         </div>
-        <!-- 3 - Atributo 'name' -->
-        <div>
-            <!-- 4 - atributo 'label' -->
-            <label for="age">Idade:</label>
-            <input type="text" name="age">
+        <div class="radio">
+          <input type="radio" name="car_model" id="audi" />
+          <label for="audi">Audi</label>
         </div>
-        <!-- 6 - select -->
-        <div>
-            <label for="job">Selecione a sua profissão:</label>
-            <select name="job" >
-                <option value="programador">Programador</option>
-                <option value="tester">Tester/QA</option>
-                <option value="devops">DevOps</option>
-            </select>
+        <div class="radio">
+          <input type="radio" name="car_model" id="aston_martin" />
+          <label for="aston_martin">Aston Martin</label>
         </div>
-        <!-- 7 - Atributo selected -->
-        <div>
-            <label for="contract">Você leu os termos do contrato?</label>
-            <select name="contract">
-                <option value="sim">Sim</option>
-                <option value="nao" selected>Não</option>
-            </select>
+      </div>
+      <!-- 15 - checkbox -->
+      <div>
+        <label for="optionals[]">Escolha os opcionais do carro:</label>
+        <div class="radio">
+          <input type="checkbox" name="optionals[]" id="automatic" />
+          <label for="automatic">Automático</label>
         </div>
-        <!-- 8 - Multiplas opções -->
-        <div>
-            <label for="items">Selecione os itens dedsejados: </label>
-            <select name="items" multiple>
-                <option value="pera">Pêra</option>
-                <option value="maca">Maçã</option>
-                <option value="arroz">Arroz</option>
-                <option value="feijao">Feijão</option>
-                <option value="milho">Milho</option>
-            </select>
+        <div class="radio">
+          <input type="checkbox" name="optionals[]" id="turbo_charger" />
+          <label for="turbo_charger">Motor Turbo</label>
         </div>
-        <!-- 9 - textarea -->
-        <div>
-            <label for="comment">Escreva abaixo o que achou:</label>
-            <textarea name="comment" cols="20" rows="5"></textarea>
+        <div class="radio">
+          <input type="checkbox" name="optionals[]" id="hybrid" />
+          <label for="hybrid">Híbrido</label>
         </div>
-        <!-- 10 - Fieldset e legend -->
-        <div>
-            <fieldset>
-                <legend>Ficha de cadastro:</legend>
-                <label for="firstname">Nome:</label>
-                <input type="text" name="firstname">
-                <label for="lastname">Sobrenome:</label>
-                <input type="text" name="lastname">
-            </fieldset>
-        </div>
-        <!-- 5 - envio de 'form'-->
-        <input type="submit" value="Cadastrar">
+      </div>
+      <!-- 16 - datas -->
+      <div>
+        <label for="birthday">Data de nascimento:</label>
+        <input type="date" name="birthday" id="birthday" />
+      </div>
+      <!-- 17 - arquivos -->
+      <div>
+        <label for="files">Insira o seu arquivo:</label>
+        <input type="file" name="files" id="files" />
+      </div>
+      <!-- 18 - numeros -->
+      <div>
+        <label for="salary">Quanto você ganha atualmente:</label>
+        <input type="number" name="salary" id="salary">
+      </div>
+      <!-- 19 - email -->
+      <div>
+        <label for="email">Digite seu e-mail:</label>
+        <input type="email" name="email" id="email">
+      </div>
+      <!-- 20 - Value -->
+      <!-- 5 - envio de 'form'-->
+      <input type="submit" value="Cadastrar" />
+      <!-- 13 - Limpar 'form' -->
+      <input type="reset" value="Limpar" />
     </form>
-</body>
+  </body>
 </html>
