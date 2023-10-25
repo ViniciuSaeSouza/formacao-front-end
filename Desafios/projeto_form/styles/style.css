@@ -65,8 +65,80 @@ textarea {
     height: 45px;
 }
 
+.form-header p {
+    color: #673ab7;
+    border-bottom: 2px solid #673ab7;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px;
+}
+
+/* form-body */
+.form-body {
+    padding: 30px;
+}
+
+.form-title {
+    margin-bottom: 15px;
+}
+
+.form-body p {
+    margin-bottom: 20px;
+}
+
+.required-field {
+    color: red;
+}
+
+.box-input {
+    margin-bottom: 25px;
+}
+
+.block {
+    display: block;
+}
+
+ul.optional-list {
+    display: inline-block;
+    margin: 0px 30px 30px 0px;
+    columns: 2;
+}
+
+.optional-list li {
+    list-style: none;
+    margin-bottom: 7px;
+}
+
+.box-input p {
+    margin-bottom: 15px;
+}
+
 /* Text-area */
 
 textarea {
     padding: 10px 5px;
+}
+
+/* Botão de envio */
+.btn-submit {
+    
+    background-color: #673ab7;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+    
+}
+
+.btn-submit:hover {
+    background-color: #fff;
+    border-color: #673ab7;
+    color: #673ab7;
 }
