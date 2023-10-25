@@ -124,7 +124,6 @@ textarea {
 
 /* Botão de envio */
 .btn-submit {
-    
     background-color: #673ab7;
     color: #fff;
     border: 2px solid transparent;
@@ -134,7 +133,6 @@ textarea {
     cursor: pointer;
     text-transform: uppercase;
     transition: 0.5s;
-    
 }
 
 .btn-submit:hover {
