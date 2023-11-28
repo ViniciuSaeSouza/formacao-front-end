@@ -1,0 +1,30 @@
+body {
+    padding-bottom: 500px;
+}
+
+/* 1 - Flex */
+.flex {
+    display: flex;
+    background-color: #ddd;
+    margin-bottom: 20px ;
+}
+
+/* 2 - Flex - column */
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 3 - Wrap */
+
+.wrap {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.box {
+    height: 40px;
+    width: 33%;
+    border: 1px solid red;
+}
