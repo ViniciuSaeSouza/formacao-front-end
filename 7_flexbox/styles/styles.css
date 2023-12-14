@@ -21,10 +21,25 @@ body {
 .wrap {
     display: flex;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .box {
+    
     height: 40px;
     width: 33%;
     border: 1px solid red;
 }
+
+/* 4 - Justify content */
+.center {
+display: flex;
+margin-bottom: 20px;
+justify-content: center;
+}
+
+.center .box {
+    width: 50px;
+}
+
+.box
