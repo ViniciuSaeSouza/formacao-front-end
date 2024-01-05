@@ -34,10 +34,9 @@ body {
 .center,
 .space-around,
 .space-between,
-.end,
-h2 {
+.end {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .center .box,
@@ -47,18 +46,51 @@ h2 {
   width: 50px;
 }
 
-.center, h2 {
+.center {
   justify-content: center;
 }
 
 .space-around {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .space-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .end {
-    justify-content: end;
+  justify-content: end;
+}
+
+/* 5 - Align Items */
+
+.align-center,
+.flex-end,
+.stretch{
+  display: flex;
+  margin-bottom: 20px;
+  height: 200px;
+  border: 1px solid blue;
+}
+
+.align-center .box,
+.flex-end .box,
+.stretch .box{
+  width: 50px;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-end {
+  align-items: flex-end;
+}
+
+.stretch {
+  align-items: stretch;
+}
+
+.stretch .box {
+  height: auto;
 }
