@@ -131,11 +131,11 @@ body {
 }
 
 .grow .box {
-  flex: 1;
+  flex-grow: 1;
 }
 
 .grow .big {
-  flex: 2;
+  flex-grow: 2;
 }
 
 /* 9 - Basis */
@@ -144,7 +144,7 @@ body {
 }
 
 .basis .box {
-  flex-basis: 80px;
+  flex-basis: 5%;
 }
 
 .basis .big {
