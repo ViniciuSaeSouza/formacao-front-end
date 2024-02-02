@@ -17,7 +17,7 @@
         <!-- Login e Registro -->
         <div id="form-container">
           <div id="form-box">
-            <img src="img/logo_instagram.png" alt="Instagram" />
+            <img id="logo-insta" src="img/logo_instagram.png" alt="Instagram" />
             <form id="login-form">
               <input
                 type="text"
@@ -27,16 +27,21 @@
               <input type="password" name="password" placeholder="Senha" />
               <input type="submit" value="Entrar" />
             </form>
+            <!-- SEPARADOR -->
             <div class="separator">
               <div class="line"></div>
               <span>Ou</span>
             </div>
             <div id="other-links">
+              <!-- FACEBOOK LOGIN -->
               <div id="facebook-login">
-                <img src="img/logo_facebook.svg" alt="Facebook Login" />
-                <span>Entar com o Facebook</span>
+                <a href="#">
+                  <img src="img/logo_facebook.svg" alt="Facebook Login" />
+                  <span>Entar com o Facebook</span>
+                </a>
               </div>
-              <div id="forgot-pass">
+              <!-- FORGOT PASSWORD -->
+              <div id="forgot-password">
                 <a href="#">Esqueceu sua senha?</a>
               </div>
             </div>
@@ -44,18 +49,20 @@
           <div id="register-container">
             <p>Não tem uma conta? <a href="#">Cadastra-se</a></p>
           </div>
+          <!-- GET APP -->
           <div id="get-app-container">
             <p>Obtenha o aplicativo.</p>
-            <a href="#"> 
-              <img src="img/apple_btn.png" alt="Apple Store" /> 
+            <a href="#">
+              <img src="img/apple_btn.png" alt="Apple Store" />
             </a>
             <a href="#">
-              <img src="img/gplay_btn.png" alt="Google Play">
+              <img src="img/gplay_btn.png" alt="Google Play" />
             </a>
           </div>
         </div>
       </div>
     </main>
+    <!-- FOOTER -->
     <footer>
       <nav>
         <ul id="footer-links">
