@@ -9,4 +9,15 @@ console.log(10 - 5);
 console.log(5 * 4);
 console.log(10 / 2);
 
+// 3 - Special Numbers
+console.log (typeof Infinity); // Infinity com 'i' Maiúsculo
+
+console.log(typeof -Infinity);
+
+console.log(typeof 12 * 'asd');
+
+console.log(typeof NaN)
+
+// 4 - Strings
+console.log("Um texto");
 
