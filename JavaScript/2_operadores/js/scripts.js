@@ -89,7 +89,7 @@ console.log(!5 > 2);
 // 12 - Empty Values 
 console.log(typeof null, typeof undefined);
 
-console.log(null == undefined)
+console.log(null == undefined);
 
-console.log(null === undefined)
+console.log(null === undefined);
 
